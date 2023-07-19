@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: var(--dark-slate-grey);
+    background-color: var(--off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.card {
+    border-radius: 20px 20px 100px 20px;
+    background-color: var(--white);
+    width: 343px;
+    height: 486px;
+    padding: 48px 24px 39px 24px;
+}
+
+.up {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input {
+    width: 88px;
+    height: 54px;
+    border: var(--light-grey) solid 1px;
+    border-radius: 8px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.input-error {
+    width: 88px;
+    height: 54px;
+    border: var(--light-red) solid 1px;
+    border-radius: 8px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.input-group input::placeholder {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.label {
+    margin-bottom: 4px;
+    color: var(--smokey-grey);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: 3.36px;
+}
+
+.label-error {
+    margin-bottom: 4px;
+    color: var(--light-red);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: 3.36px;
+}
+
+.error-text {
+    color: var(--light-red);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 8px;
+    letter-spacing: 0;
+}
+
+.line {
+    position: relative;
+    margin-top: 63px;
+    width: 295px;
+    height: 2px;
+    background-color: var(--light-grey)
+}
+
+.icon {
+    position: absolute;
+    top: -32px;
+    right: calc(50% - 32px);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: var(--off-black);
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.bottom {
+    margin-top: 54px;
+}
+
+.bottom p {
+    margin-top: -13px;
+    font-size: 3.375rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+
+.bottom span {
+    color: var(--purple)
+}
+
+@media (min-width:850px) {
+    .card {
+        width: 840px;
+        height: 651px;
+        padding: 56px 56px 0 56px;
+        border-radius: 25px 25px 200px 25px;
+    }
+
+    .up {
+        width: 544px;
+    }
+
+    .label {
+        font-size: .875rem;
+        letter-spacing: 3.15px;
+    }
+
+    .label-error {
+        font-size: .875rem;
+        letter-spacing: 3.15px;
+    }
+
+    .input {
+        width: 160px;
+        height: 72px;
+        padding-left: 24px;
+        font-size: 2rem;
+    }
+
+    .input-error {
+        width: 160px;
+        height: 72px;
+        padding-left: 24px;
+        font-size: 2rem;
+    }
+
+    .error-text {
+        color: var(--light-red);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+
+    .line {
+        position: relative;
+        margin-top: 48px;
+        width: 100%;
+    }
+
+    .icon {
+        position: absolute;
+        top: -48px;
+        right: 0;
+        width: 96px;
+        height: 96px;
+    }
+
+    .icon img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .bottom {
+        margin-top: 62px;
+    }
+
+    .bottom p {
+        margin-top: -34px;
+        font-size: 6.1875rem;
+    }
+}
