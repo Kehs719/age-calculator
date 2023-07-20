@@ -97,6 +97,7 @@ function formValidation(day, month, year) {
                     break;
                 case 2:
                     if (year > new Date().getFullYear()) {
+                        console.log('okk')
                         errorInputsOne(2, "Must be in the past")
                     } else {
                         errorInputsOne(2, "Must be a above 1900")
@@ -175,7 +176,8 @@ function isWrongInputs() {
     if (inputs[1].value > 12 || inputs[1].value < 1) {
         wrongInputs.push(1)
     }
-    if (inputs[2].value < 1920 || inputs[0].value > new Date().getFullYear()) {
+
+    if (inputs[2].value < 1900 || inputs[2].value > new Date().getFullYear()) {
         wrongInputs.push(2)
     }
     return wrongInputs;
